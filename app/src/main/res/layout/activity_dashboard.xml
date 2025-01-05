@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/dashboardTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Button to upload employee details -->
+    <Button
+        android:id="@+id/btnUploadEmployee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Upload Employee Details"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/dashboardTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Button to approve/decline holiday requests -->
+    <Button
+        android:id="@+id/btnHolidayRequests"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Approve/Decline Holiday Requests"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnUploadEmployee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Button to automatically increment salaries -->
+    <Button
+        android:id="@+id/btnIncrementSalaries"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Increment Salaries"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnHolidayRequests"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Button to view employee list -->
+    <Button
+        android:id="@+id/btnViewEmployees"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="View Employees"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnIncrementSalaries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <!-- Button to manage notifications -->
+    <Button
+        android:id="@+id/btnManageNotifications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Manage Notifications"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btnViewEmployees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
